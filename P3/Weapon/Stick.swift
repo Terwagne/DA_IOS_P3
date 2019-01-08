@@ -9,7 +9,7 @@
 import Foundation
 class Stick: Weapon {
     init() {
-        super.init(weaponName: "stick", damage: 20)
+        super.init(weaponName: "stick", damage: 5)
     }
     
 }// end of the Class

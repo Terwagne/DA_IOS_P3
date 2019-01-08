@@ -9,11 +9,10 @@
 import Foundation
 
 game.presentMenu()
-team1.namePlayer1()
-team1.createTeam()
-team2.namePlayer2()
-team2.createTeam()
-team1.printTeams()
-team1.attackOrCareTeam1()
-team2.attackOrCareTeam2()
-game.Winner()
+
+while true {
+    team1.attackOrCareTeam1()
+    team2.attackOrCareTeam2()
+   
+}
+
