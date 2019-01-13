@@ -45,3 +45,53 @@ CONTRAINTES GENERALES :
 •	Le projet ne contient aucun warning ni erreur.
 
 DELAI DE REALISATION : deux mois. 
+
+Structure du Programme
+B - Réponse 
+I – Les équipes
+
+Le nom du joueur appelé dans la classe Team est une variable de type String.
+
+Les équipes sont constituées dans la class Team à l’aide d’un dictionnaire (la clé permet de numéroter les combattants )
+
+Le nom des combattants devant être unique, j’ai choisi d’implémenter un singleton  dans la class CheckNameOfTheWarrior qui a pour méthode de choisir un nom unique. 
+
+Le nom du mage est stocké dans une variable. Je suis partie du principe que l’on n’a pas le droit de tuer un mage. De ce fait, je ne souhaitais pas qu’il fasse parti du dictionnaire des combattants.
+
+Une fois les équipes constituées, un print est proposé afin de résumer les équipes des 2 joueurs . 
+II – Le combat
+
+Grâce au constructeur et à l’initialisation des class Characters et de celles qui héritent comme Fighter, Colossus, Dwarft et Magus. Le combat est lancé dans la class Game à partir d’une fonction simple de combat étant une méthode de la class Characters.
+ 
+Grâce au Getter – Setter de cette même classe, les points de vie sont calculés en tant réel.  
+
+
+
+III – Le changement d’arme
+
+J’ai choisi de faire apparaître de façon aléatoire une grenade ôtant 100 points de vie.
+
+Pour cela j’ai utilisé la fonction arc4random 
+En l’implémentant de la façon suivante :
+
+ 
+
+
+IV – Le Bonus
+
+J’ai choisi de faire rencontrer Superman au Mage. Superman lui offre de l’eau de Krypton qui remonte les points de vie des combattants à leur maximum. 
+
+Pour cela, j’ai également utilisée la fonction arc4random que j’ai implémenté de la façon suivante :
+
+
+ 
+
+Aussi, il est possible de changer facilement les paramètres de l’apparition aléatoire du coffre ou du bonus en augmentant les variables random et bonus.
+
+
+
+V – Fin de la Partie.
+
+J’ai créé une fonction Check winner qui permet de vérifier après chaque combat si le dictionnaire de l’équipe en question est vide. S’il ne contient plus de combattant, l’équipe adverse a remporté la partie et cela s’affiche. 
+Je jeu indique Game Over et une autre partie est lancée.
+
